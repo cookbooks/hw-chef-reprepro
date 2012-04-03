@@ -21,7 +21,7 @@
 
 # Enable the listen port for reprepro via the apache attributes
 node.default[:apache][:listen_ports] =
-  (node[:apache][:listen_ports] | [ node[:reprepro][:listen_ports] ])
+  ( node[:apache][:listen_ports] | [ node[:reprepro][:listen_port] ] )
 
 include_recipe "build-essential"
 include_recipe "apache2"
