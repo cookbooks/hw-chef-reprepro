@@ -8,5 +8,4 @@ default.reprepro.pgp.email = "apt@#{domain}"
 default.reprepro.pulls.name = "oneiric"
 default.reprepro.pulls.from = "oneiric"
 default.reprepro.pulls.component = "main universe multiverse"
-default.reprepro.architectures = %w[amd64]
-
+default.reprepro.architectures = %w[i386 amd64]

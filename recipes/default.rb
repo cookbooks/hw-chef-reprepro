@@ -146,6 +146,4 @@ apt_repository "reprepro" do
   uri "file://#{apt_repo['repo_dir']}"
   distribution node.lsb.codename
   components ["main"]
-  action :nothing
-  subscribes :add, resources(:file => pgp_key), :delayed
 end
